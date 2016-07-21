@@ -3,17 +3,27 @@ dictionary= PyDictionary()
 from pylev import pylev
 import difflib
 import sys
+#from xgoogle.translate import Translator
 #from difflib_data import*
 
 #BeautifulSoup(html, "html.parser")
 
-#class DevNull:
-    #def write(self, msg):
-       #pass
-#sys.stderr = DevNull()
-import goslate
-gs = goslate.Goslate()
-print(gs.translate('hello world', 'de'))
+######make all the error messages temporarily disappear so stufff can be pretty
+class DevNull:
+    def write(self, msg):
+       pass
+sys.stderr = DevNull()
+
+
+#import goslate
+#gs = goslate.Goslate()
+#print(gs.translate('hello world', 'fr'))
+
+
+print ("Bonjour le monde")
+#english= input("Put in an english word for the translation and a cognate:  ")
+#translate= Translator().translate
+#print (translate(english, lang_to="fr"))
 
 
 french= input("Put in a french word for an english cognate:  ")
@@ -36,8 +46,10 @@ with open('wordsEng.txt', 'r')as inputfile:
         liresults.append(line.strip().split(','))
         #print (liresults)
 
+#list of 26 brackets to represent each letter of the alphabet, "a" has a value of 1
 words = [[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]]
-for result in liresults:    
+for result in liresults:
+    #determine the letter that the word in list Eng begins with and then add words to that list
     words[ord(result[0][0])-ord('a')].append(result[0])
 
 

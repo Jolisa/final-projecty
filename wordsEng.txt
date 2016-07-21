@@ -21835,7 +21835,7 @@ creepiness
 creeping
 creeps
 creepy
-crees
+cree
 cremate
 cremated
 cremates
@@ -24200,7 +24200,6 @@ decreasingly
 decree
 decreed
 decreeing
-decreer
 decreers
 decrees
 decrement
@@ -24882,8 +24881,6 @@ demagogy
 demand
 demandable
 demanded
-demander
-demanders
 demanding
 demandingly
 demands
