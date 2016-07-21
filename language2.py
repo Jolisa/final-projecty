@@ -38,8 +38,6 @@ french= input("Put in a french word for an english cognate:  ")
 #french= dictionary.translate(english,'fr')
 
 
-
-
 liresults=[]
 with open('wordsEng.txt', 'r')as inputfile:
     for line in inputfile:
@@ -49,7 +47,7 @@ with open('wordsEng.txt', 'r')as inputfile:
 #list of 26 brackets to represent each letter of the alphabet, "a" has a value of 1
 words = [[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]]
 for result in liresults:
-    #determine the letter that the word in list Eng begins with and then add words to that list
+    #determine the letter that the word in list Eng begins with and then add words to that list at the beginning
     words[ord(result[0][0])-ord('a')].append(result[0])
 
 
